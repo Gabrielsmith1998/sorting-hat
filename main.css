@@ -1,0 +1,20 @@
+.studentContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-body {
+    text-align: center;
+    background-color: powderblue;
+}
+
+.new-student, .card {
+    text-align: center;
+    margin: 10px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.btn {
+margin: 10px;
+}
