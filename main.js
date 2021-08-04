@@ -119,7 +119,6 @@ const init = () => {
   initSortingCard();
   wizardBuilder(newWizardz); 
   buttonEvents();
-//   // wizardFormBuilder();
  }
 
 init();
