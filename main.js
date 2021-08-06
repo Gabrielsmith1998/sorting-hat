@@ -10,9 +10,9 @@ const renderToDom = (divId, textToRender) => {
 
 const initSortingCard = () => {
   const domString = `
-  <div id="" class="card">
-    <div class="card-body">
-    <h5 class="card-title">Welcome to Hogwarts!</h5>
+  <div class="card">
+    <div class="init-card-body">
+    <h5 class="init-card-title">Welcome to Hogwarts!</h5>
         <p class="card-text">Draco Dormiens Nunquam Titillandus</p>
         <button class="btn btn-primary">Lets get sorting!</button>
      </div>
@@ -28,11 +28,10 @@ const wizardFormBuilder = () => {
     <div class="mb-3">
           <label for="name" class="form-label">Student Name</label>
           <input required type="text" class="form-control" id="name">
-    </div>
           <button onclick="houseSorter" type="submit" class="btn btn-primary">Submit</button>
+    </div>
   </form>
  `;
- 
   renderToDom('#wizardForm', domString);
 
   wizardFormEvents();
@@ -66,6 +65,8 @@ const handleFormSubmit = (event) => {
 
   newWizardz.push(newStudent);
   wizardBuilder(newWizardz);
+
+  document.querySelector('#wizardFormBuilder').reset()
 };
 
 
@@ -74,7 +75,7 @@ const wizardBuilder = (wizardArray) => {
   wizardArray.forEach((student, index) => {
   domString += `
       <div class="card" id=${student.house} style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="https://media1.popsugar-assets.com/files/thumbor/hr49kKYeddZvYfxC8yx0Zu3hi0g/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/08/15/800/n/1922283/tmp_YwOCk7_d9d70a82057ef6ae_MSDHAPO_EC023_H.JPG" class="card-img-top" alt=${newWizardz.name}>
       <div class="card-body">
         <h5 class="card-title">${student.name}</h5>
         <p class="card-text">${student.house}</p>
@@ -105,7 +106,7 @@ const VoldyBuilder = () =>  {
     voldyArmy.forEach((badGuy) => {
       domString += `
       <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="https://carboncostume.com/wordpress/wp-content/uploads/2019/10/deatheater-harrypotter.jpg" class="card-img-top" alt=${badGuy.name}>
       <div class="voldy-body">
         <h5 class="card-title">${badGuy.name}</h5>
         <p class="card-text">Voldy's Army</p>
@@ -120,6 +121,7 @@ const VoldyBuilder = () =>  {
   const wizardFormEvents = () => {
     const wizardFormElement = document.querySelector("#wizardFormBuilder");
     wizardFormElement.addEventListener("submit", handleFormSubmit);
+
   }
    
 
@@ -129,6 +131,7 @@ const buttonEvents = () => {
 
   document.querySelector('#studentContainer')
   .addEventListener("click", expelStudent);
+
 }
 
 

@@ -1,11 +1,19 @@
-.studentContainer {
-    display: flex;
-    flex-wrap: wrap;
+body {
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/1-hogwarts-castle-tim-loughner.jpg);
 }
 
-.card-body {
+
+.teamStyles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    float:left;
+}
+
+.init-card-body {
     text-align: center;
-    /* background-color: powderblue; */
+    background-color: maroon;
+    color: yellow ; 
 }
 
 .new-student, .card {
@@ -20,15 +28,19 @@ margin: 10px;
 }
 
 .voldy-body {
-    background-color: pink;
+    background-color: black;
+    color: red;
 }
 
 #slytherin {
     background-color:green;
+    color: grey;
+
 }
 
 #gryfinndor {
     background-color: maroon;
+    color: yellow;
 }
 
 #hufflepuff {
@@ -36,7 +48,18 @@ margin: 10px;
 }
 
 #ravenclaw {
-    background-color: powderblue;
+    background-color: blue;
+    color: brown;
 }
 
+.mb-3 {
+    margin: 50px;
+}
 
+.voldyStyles {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 30%;
+    float:right;
+ }
