@@ -7,6 +7,7 @@ const renderToDom = (divId, textToRender) => {
   selectedDiv.innerHTML = textToRender;
 }
 
+
 const initSortingCard = () => {
   const domString = `
   <div id="" class="card">
@@ -36,12 +37,6 @@ const wizardFormBuilder = () => {
 
   wizardFormEvents();
  }
-
- const wizardFormEvents = () => {
-  const wizardFormElement = document.querySelector("#wizardFormBuilder");
-  wizardFormElement.addEventListener("submit", handleFormSubmit);
-  handleFormSubmit();
-}
 
 
  const houseSorter = (min, max) => {
@@ -78,7 +73,7 @@ const wizardBuilder = (wizardArray) => {
   let domString = "";
   wizardArray.forEach((student, index) => {
   domString += `
-      <div class="card" style="width: 18rem;">
+      <div class="card" id=${student.house} style="width: 18rem;">
         <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">${student.name}</h5>
@@ -122,6 +117,11 @@ const VoldyBuilder = () =>  {
     renderToDom("#voldyContainer", domString)
   }
 
+  const wizardFormEvents = () => {
+    const wizardFormElement = document.querySelector("#wizardFormBuilder");
+    wizardFormElement.addEventListener("submit", handleFormSubmit);
+  }
+   
 
 const buttonEvents = () => {
   document.querySelector('#startSortingCard')
@@ -137,6 +137,7 @@ const init = () => {
   wizardBuilder(newWizardz); 
   VoldyBuilder(voldyArmy);
   buttonEvents();
+
  
  }
 
