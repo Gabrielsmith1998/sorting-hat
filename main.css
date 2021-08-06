@@ -5,7 +5,7 @@
 
 .card-body {
     text-align: center;
-    background-color: powderblue;
+    /* background-color: powderblue; */
 }
 
 .new-student, .card {
@@ -22,3 +22,21 @@ margin: 10px;
 .voldy-body {
     background-color: pink;
 }
+
+#slytherin {
+    background-color:green;
+}
+
+#gryfinndor {
+    background-color: maroon;
+}
+
+#hufflepuff {
+    background-color: yellow;
+}
+
+#ravenclaw {
+    background-color: powderblue;
+}
+
+
