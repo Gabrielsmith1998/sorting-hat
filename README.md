@@ -12,11 +12,11 @@ When the form appears then the user can enter a new name into the form and press
 A Harry Potter fan most likely who would want to imagine what Hogwarts house they would be sorted into themselves.
 
 ## Features:
-Start form button
-Enter Student Name Form
-Submit form button
-Card renders to Dom with name and random Hogwarts house
-Expel button on card that moves student into voldy’s army when pressed
+* Start form button
+* Enter Student Name Form
+* Submit form button
+* Card renders to Dom with name and random Hogwarts house
+* Expel button on card that moves student into voldy’s army when pressed
 
 ## Screenshot
 <img width="1440" alt="sorting-hat" src="https://user-images.githubusercontent.com/86996271/128581677-f259f759-d44b-44cd-8f2e-dec34c0ca37f.png">
