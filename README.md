@@ -18,6 +18,6 @@ Submit form button
 Card renders to Dom with name and random Hogwarts house
 Expel button on card that moves student into voldy’s army when pressed
 
-![Screenshot](https://drive.google.com/file/d/1b7SuxLqVB1SoBfaT0GFPNRAtjOQz5V6w/view?usp=sharing)
+![Screenshot](gabrielsmith/desktop/sorting-hat.png)
 
 [Loom Video](https://www.loom.com/share/5be1776fbf674c7189f3698bd4e0bd7e)
